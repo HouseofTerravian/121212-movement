@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>121212.movement — Organize. Mobilize. Build.</title>
+  <meta name="description" content="121212 Movement is the activism, organizing, and community action arm of the 121212 empire. Join the movement." />
+  <meta property="og:title" content="121212.movement — The Movement is the Message." />
+  <meta property="og:description" content="Organize locally. Amplify nationally. Build generationally. Join the 121212 Movement." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-121">121212</span><span class="logo-ext">.movement</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#campaigns">Campaigns</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#join" class="nav-cta">Join</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#campaigns" onclick="closeMobileNav()">Campaigns</a>
+    <a href="#community" onclick="closeMobileNav()">Community</a>
+    <a href="#resources" onclick="closeMobileNav()">Resources</a>
+    <a href="#events" onclick="closeMobileNav()">Events</a>
+    <a href="#join" onclick="closeMobileNav()">Join the Movement</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-tag">
+        <span class="dot"></span>
+        Movement Active — 28,500+ People Organized
+      </div>
+      <h1>The Movement<br/>is the <em>Message.</em></h1>
+      <p class="hero-sub">Organize. Mobilize. Build.</p>
+      <div class="hero-actions">
+        <a href="#join" class="btn-primary">Join the Movement &rarr;</a>
+        <a href="#campaigns" class="btn-outline">See Active Campaigns</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num">28<span>K+</span></div>
+          <div class="label">People Organized</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">4</div>
+          <div class="label">Active Campaigns</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">14<span>+</span></div>
+          <div class="label">Cities Mobilized</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">$2<span>M+</span></div>
+          <div class="label">Community Impact</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACTIVE CAMPAIGNS STRIP ========== -->
+  <section class="campaigns-strip" id="campaigns">
+    <div class="campaigns-strip-header">
+      <div>
+        <div class="section-label">Right Now</div>
+        <h2 style="color: #fff; font-family: Georgia, serif; font-size: 1.8rem; font-weight: 700;">Active Campaigns</h2>
+      </div>
+      <a href="#" class="view-all">View All Campaigns &rarr;</a>
+    </div>
+    <div class="campaigns-scroll">
+      <!-- Campaign 1 -->
+      <div class="campaign-card">
+        <div class="campaign-status">
+          <span class="status-dot"></span>
+          <span class="status-label">Active</span>
+        </div>
+        <h3>Know Your Vote</h3>
+        <p class="campaign-city">&#x1F4CD; Atlanta, GA</p>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" style="width: 42%;" data-width="42%"></div>
+        </div>
+        <p class="campaign-joined"><span>4,200</span> people joined</p>
+      </div>
+      <!-- Campaign 2 -->
+      <div class="campaign-card">
+        <div class="campaign-status">
+          <span class="status-dot"></span>
+          <span class="status-label">Active</span>
+        </div>
+        <h3>Black Business First</h3>
+        <p class="campaign-city">&#x1F4CD; National</p>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" style="width: 78%;" data-width="78%"></div>
+        </div>
+        <p class="campaign-joined"><span>12,800</span> people joined</p>
+      </div>
+      <!-- Campaign 3 -->
+      <div class="campaign-card">
+        <div class="campaign-status">
+          <span class="status-dot"></span>
+          <span class="status-label">Active</span>
+        </div>
+        <h3>Reparations Now</h3>
+        <p class="campaign-city">&#x1F4CD; Washington D.C.</p>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" style="width: 61%;" data-width="61%"></div>
+        </div>
+        <p class="campaign-joined"><span>8,100</span> people joined</p>
+      </div>
+      <!-- Campaign 4 -->
+      <div class="campaign-card">
+        <div class="campaign-status">
+          <span class="status-dot"></span>
+          <span class="status-label">Active</span>
+        </div>
+        <h3>Community Land Trust</h3>
+        <p class="campaign-city">&#x1F4CD; Chicago, IL</p>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" style="width: 34%;" data-width="34%"></div>
+        </div>
+        <p class="campaign-joined"><span>3,400</span> people joined</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY MOVEMENT ========== -->
+  <section class="why-section" id="community">
+    <div class="why-inner">
+      <div class="section-header">
+        <div class="section-label">Our Approach</div>
+        <h2>Power Isn't Given.<br/>It's Organized.</h2>
+        <p>Three pillars of lasting, generational change for Black communities across America.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon red">&#x1F3D8;</div>
+          <h3>Organize Locally</h3>
+          <p>Real change starts in your block, your ward, your city. We provide tools, training, and connections to build power where you live — not just online.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon green">&#x1F4E3;</div>
+          <h3>Amplify Nationally</h3>
+          <p>Local wins become national movements. We connect organizers across cities, amplify stories that matter, and drive policy conversations at every level of government.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon black">&#x1F3DB;</div>
+          <h3>Build Generationally</h3>
+          <p>We are not here for a moment. We are here for a movement. Every action we take is designed to create lasting wealth, safety, and self-determination for generations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED CAMPAIGN ========== -->
+  <section class="featured-campaign">
+    <div class="featured-left">
+      <span class="featured-tag">Featured Campaign</span>
+      <h2>Black Business First</h2>
+      <p>America was built on Black labor. Now we build our own. The Black Business First campaign mobilizes communities to redirect spending, create economic corridors, and build an ecosystem where Black dollars circulate and compound within our own communities.</p>
+      <div class="featured-goals">
+        <h4>Campaign Goals</h4>
+        <ul>
+          <li>Redirect $100M in annual spending to Black-owned businesses</li>
+          <li>Register 5,000 new Black-owned businesses nationally</li>
+          <li>Establish 12 Black Business Districts in major cities</li>
+          <li>Create a national directory of 20,000+ verified Black businesses</li>
+        </ul>
+      </div>
+      <a href="#join" class="btn-primary" style="align-self: flex-start;">Join This Campaign &rarr;</a>
+    </div>
+    <div class="featured-right">
+      <div class="featured-stat">
+        <div class="big-num">12,800</div>
+        <div class="stat-label">Campaign Participants</div>
+      </div>
+      <div class="featured-stat">
+        <div class="big-num">34</div>
+        <div class="stat-label">Cities Activated</div>
+      </div>
+      <div class="featured-stat">
+        <div class="big-num">18</div>
+        <div class="stat-label">Weeks Active</div>
+      </div>
+      <div class="featured-stat">
+        <div class="big-num" style="font-size: 2.4rem;">$4.2M</div>
+        <div class="stat-label">Redirected to Black Businesses</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMMUNITY VOICES ========== -->
+  <section class="voices-section">
+    <div class="voices-inner">
+      <div class="section-header">
+        <div class="section-label">Community Voices</div>
+        <h2>Why We Move</h2>
+        <p>Real words from real people who chose to organize instead of wait.</p>
+      </div>
+      <div class="voices-grid">
+        <div class="voice-card">
+          <p class="voice-quote">"I've been 'aware' my whole life. 121212 Movement gave me somewhere to put that awareness. My neighborhood has already felt the difference — and we're just getting started."</p>
+          <div class="voice-author">
+            <div class="voice-avatar avatar-red">DW</div>
+            <div>
+              <div class="voice-name">Darius Williams</div>
+              <div class="voice-city">Atlanta, GA</div>
+            </div>
+          </div>
+        </div>
+        <div class="voice-card">
+          <p class="voice-quote">"The Reparations Now campaign put language to what I've always felt. But more than that — it showed me that thousands of us feel the same way and are ready to demand it together."</p>
+          <div class="voice-author">
+            <div class="voice-avatar avatar-green">TJ</div>
+            <div>
+              <div class="voice-name">Tamika Johnson</div>
+              <div class="voice-city">Washington, D.C.</div>
+            </div>
+          </div>
+        </div>
+        <div class="voice-card">
+          <p class="voice-quote">"Black Business First changed how my whole family shops. We started small — one street, one zip code — and now half the block is buying Black every single week."</p>
+          <div class="voice-author">
+            <div class="voice-avatar avatar-black">MR</div>
+            <div>
+              <div class="voice-name">Marcus Reed</div>
+              <div class="voice-city">Chicago, IL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESOURCES ========== -->
+  <section class="resources-section" id="resources">
+    <div class="resources-inner">
+      <div class="section-header">
+        <div class="section-label">Free Resources</div>
+        <h2>Know Your Rights.<br/>Know Your Power.</h2>
+        <p>Knowledge is the foundation of any movement. Every resource below is completely free.</p>
+      </div>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon">&#x1F5F3;</div>
+          <h3>Voter Registration Guide</h3>
+          <p>Step-by-step registration walkthroughs, state deadlines, ID requirements, and how to protect your vote on election day.</p>
+          <a href="#" class="btn-green">Download Free</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">&#x1F4BC;</div>
+          <h3>Business Formation Toolkit</h3>
+          <p>LLC setup guides, EIN registration, business banking recommendations, and templates to launch your Black-owned business.</p>
+          <a href="#" class="btn-green">Download Free</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">&#x1F3E0;</div>
+          <h3>Housing Rights Handbook</h3>
+          <p>Fair housing laws, tenant rights by state, anti-discrimination protections, and how to fight back against predatory landlords.</p>
+          <a href="#" class="btn-green">Download Free</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">&#x270A;</div>
+          <h3>Community Organizing Playbook</h3>
+          <p>How to start a local chapter, build coalitions, run effective campaigns, and sustain long-term organizing energy.</p>
+          <a href="#" class="btn-green">Download Free</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EVENTS ========== -->
+  <section class="events-section" id="events">
+    <div class="events-inner">
+      <div class="section-header">
+        <div class="section-label">Upcoming Events</div>
+        <h2>Show Up. Stand Up.</h2>
+        <p>Every event is an opportunity to connect, organize, and build power with your people.</p>
+      </div>
+      <div class="events-grid">
+        <div class="event-card">
+          <div class="event-date-block">
+            <span class="event-month">MAR</span>
+            <span class="event-day">22</span>
+          </div>
+          <div class="event-body">
+            <span class="event-type virtual">Virtual</span>
+            <h3>Know Your Vote — Voter ID Clinic</h3>
+            <p class="event-location">&#x1F4BB; Zoom — National</p>
+            <a href="#" class="btn-outline-sm">Register Free</a>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-date-block">
+            <span class="event-month">APR</span>
+            <span class="event-day">05</span>
+          </div>
+          <div class="event-body">
+            <span class="event-type in-person">In-Person</span>
+            <h3>Black Business First — Atlanta Marketplace</h3>
+            <p class="event-location">&#x1F4CD; Atlanta, GA</p>
+            <a href="#" class="btn-outline-sm">Register Free</a>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-date-block">
+            <span class="event-month">APR</span>
+            <span class="event-day">19</span>
+          </div>
+          <div class="event-body">
+            <span class="event-type in-person">In-Person</span>
+            <h3>Reparations Now — Capitol March & Rally</h3>
+            <p class="event-location">&#x1F4CD; Washington, D.C.</p>
+            <a href="#" class="btn-outline-sm">Register Free</a>
+          </div>
+        </div>
+        <div class="event-card">
+          <div class="event-date-block">
+            <span class="event-month">MAY</span>
+            <span class="event-day">03</span>
+          </div>
+          <div class="event-body">
+            <span class="event-type virtual">Virtual</span>
+            <h3>Community Land Trust — Organizer Training</h3>
+            <p class="event-location">&#x1F4BB; Zoom — Chicago Focus</p>
+            <a href="#" class="btn-outline-sm">Register Free</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== JOIN CTA ========== -->
+  <section class="join-section" id="join">
+    <div class="join-inner">
+      <div class="section-label">Take Action</div>
+      <h2>Add your name to the movement.</h2>
+      <p>Join 28,500+ organizers, activists, and community builders who refuse to wait.</p>
+      <form class="join-form" id="join-form" novalidate>
+        <div class="form-row">
+          <input type="text" id="first-name" placeholder="First Name" required autocomplete="given-name" />
+          <input type="text" id="last-name" placeholder="Last Name" required autocomplete="family-name" />
+        </div>
+        <input type="email" id="email" placeholder="Your Email Address" required autocomplete="email" />
+        <button type="submit" class="btn-white">Join the Movement &rarr;</button>
+        <p class="form-disclaimer">No spam. Ever. Unsubscribe any time. Your information will never be sold.</p>
+      </form>
+      <div class="success-msg" id="success-msg">
+        <div class="check-icon">&#x2728;</div>
+        <h3>You're in the movement.</h3>
+        <p>Welcome. Check your inbox for your first action steps. Together we build.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-121">121212</span><span class="logo-ext">.movement</span>
+          </div>
+          <p>The activism, organizing, and community action arm of the 121212 empire. Unapologetically Black. Uncompromisingly organized.</p>
+          <div class="footer-socials">
+            <button class="social-btn" aria-label="Twitter/X">&#x1D54F;</button>
+            <button class="social-btn" aria-label="Instagram">&#x1F4F7;</button>
+            <button class="social-btn" aria-label="Facebook">f</button>
+            <button class="social-btn" aria-label="YouTube">&#x25B6;</button>
+            <button class="social-btn" aria-label="TikTok">&#x266B;</button>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Campaigns</h4>
+          <ul>
+            <li><a href="#">Know Your Vote</a></li>
+            <li><a href="#">Black Business First</a></li>
+            <li><a href="#">Reparations Now</a></li>
+            <li><a href="#">Community Land Trust</a></li>
+            <li><a href="#">All Campaigns</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Local Chapters</a></li>
+            <li><a href="#">Start a Chapter</a></li>
+            <li><a href="#">Community Forum</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Donate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Voter Guide</a></li>
+            <li><a href="#">Business Toolkit</a></li>
+            <li><a href="#">Housing Rights</a></li>
+            <li><a href="#">Organizing Playbook</a></li>
+            <li><a href="#">News & Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 121212 Movement. All rights reserved.</p>
+        <div class="footer-empire">
+          <span class="empire-label">Part of the 121212 Empire:</span>
+          <div class="empire-links">
+            <a href="#">121212.black</a>
+            <a href="#">121212.network</a>
+            <a href="#">121212.capital</a>
+            <a href="#">121212.media</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
