@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply font-sans antialiased; }
+}
+
+@layer components {
+  .btn-red {
+    @apply bg-brand-red hover:bg-brand-red-dark text-white font-semibold py-3 px-8 rounded-md transition-all duration-300 hover:shadow-lg hover:shadow-brand-red/20;
+  }
+  .btn-green {
+    @apply bg-brand-green hover:bg-brand-green-light text-white font-semibold py-3 px-8 rounded-md transition-all duration-300;
+  }
+  .btn-outline {
+    @apply border-2 border-brand-black text-brand-black hover:bg-brand-black hover:text-white font-semibold py-3 px-8 rounded-md transition-all duration-300;
+  }
+  .btn-outline-white {
+    @apply border-2 border-white text-white hover:bg-white hover:text-brand-black font-semibold py-3 px-8 rounded-md transition-all duration-300;
+  }
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+  .heading-primary {
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-brand-black;
+  }
+  .heading-secondary {
+    @apply font-serif text-3xl md:text-4xl font-bold text-brand-black;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}
